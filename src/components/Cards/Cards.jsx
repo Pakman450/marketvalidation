@@ -3,7 +3,9 @@ import React from 'react'
 export default function Cards() {
   return (
     <>
-    <div className='md:flex md:justify-evenly grid justify-items-center' >
+    {/* <div className='md:flex md:justify-evenly grid justify-items-center' > */}
+    <div className='flex justify-evenly md:grid md:justify-items-center' >
+
         <div className="card bg-base-100 max-w-sm sm:w-96 shadow-xl">
             <figure>
                 <img
@@ -15,7 +17,6 @@ export default function Cards() {
                 <p>Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
                 quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
                 <div className="card-actions justify-end">
-                <button className="btn btn-primary">Buy Now</button>
                 </div>
             </div>
         </div>
@@ -30,7 +31,6 @@ export default function Cards() {
                 <p>Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
                 quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
                 <div className="card-actions justify-end">
-                <button className="btn btn-primary">Buy Now</button>
                 </div>
             </div>
         </div>
@@ -45,7 +45,6 @@ export default function Cards() {
                 <p>Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
                 quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
                 <div className="card-actions justify-end">
-                <button className="btn btn-primary">Buy Now</button>
                 </div>
             </div>
         </div>
