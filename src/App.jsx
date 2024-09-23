@@ -1,40 +1,44 @@
 import { useState } from 'react'
-import Hero from './components/Hero/Hero'
-import Navbar from './components/Navbar/Navbar'
-import Cards from './components/Cards/Cards'
-import Carousel from './components/Carousel/Carousel'
-import backGroundImg from '/src/assets/back.jpg'
 import backGroundImg1 from '/src/assets/back1.jpg'
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-      <div className="relative h-screen w-full bg-white bg-cover bg-center flex items-center justify-end" style={{ backgroundImage: `url(${backGroundImg1})` }}>
-        <div className="absolute inset-0"></div>
+    <div>
+      <div className="navbar bg-base-100">
+        <a className="btn btn-ghost text-xl"><span className='font-poppins text-2xl font-bold'>ClearPath Budgeting</span></a>
+      </div>
+      <div className="relative h-screen w-full bg-white bg-cover bg-center flex items-center justify-center" style={{ backgroundImage: `url(${backGroundImg1})` }}>
 
-        <div className="relative pr-10 lg:pr-20 pb-40 lg:pb-20 ">
-          <div className='flex flex-col lg:flex-row'>
-            <div className="hero" >
-              <div className="hero-content text-right">
-                <div className="max-w-lg">
-                  <h1 className="text-4xl text-black font-bold">Do you need help with your finances?</h1>
-                  <p className="py-6 text-black ">
-                    We are setting up a 1-to-1 bugeting consultation service.
-                    Sign up below to get notified when we are launching!
-                  </p>
-                  <input type="text" placeholder="Type here" className="input input-bordered w-full max-w-xs" />
+      <div className="absolute inset-0"></div>
 
-                  <button className="btn btn-primary text-black ">Sign up</button>
-                  
-                </div>
+      <div className="relative sm:px-10 lg:px-20 lg:pb-80">
+        <div className='flex flex-col lg:flex-row border-black shadow-xl rounded-lg'>
+          <div className="hero" >
+            <div className="hero-content text-center">
+              <div className="max-w-lg">
+
+                <h1 className="text-4xl text-black font-bold">Do you need help with your finances?</h1>
+                <p className="py-6 text-black ">
+                  We are setting up a 1-to-1 budgeting consultation service.
+                  Sign up below to get notified when we are launching!
+                  <br/><span className='text-slate-400'>We respect your privacy. We do not share your email to anyone else.</span>
+                </p>
+                <input type="email" placeholder="Email" className="input input-bordered w-full  lg:max-w-xs lg:mx-5 mb-5" />
+
+                <button className="btn btn-primary text-white">Sign up</button>
+                
               </div>
- 
             </div>
+
           </div>
         </div>
-        
       </div>
+
+      </div>
+    </div>
+
 
     </>
   )
